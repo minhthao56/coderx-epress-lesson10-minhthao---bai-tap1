@@ -22,6 +22,8 @@ app.use("/books", bookRouters);
 app.use("/users", userRouters);
 app.use("/trans", transactionsRouters);
 
+//Satic file
+app.use(express.static('public'))
 // Listening
 app.listen(port, function(){
     console.log('Server listen on port' + port);
